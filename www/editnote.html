@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"  content="width=device-width" />
+		<meta http-equiv='Content-Type' content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>我的记事本</title>
+    </head>
+    <body>
+        <!--管理员界面-->
+		<div data-role="page" id="editPage">
+			<div data-role="header" data-position="fixed" data-position="inline" data-theme="b">
+				<!-- a href="javascript:"
+				显示为链接的样式,但不会链接到任何页面.就是一个空链接,
+				单击也没什么反应.一般和onclick事件结合使用.
+				-->
+				<a href="notelist.html" data-ajax="false" rel="external">返回</a>
+				<h4>编辑记事</h4>
+				<a href="javascript:">更新</a>
+			</div>
+			<div data-role="content">
+				<label for="rdo-type">类型:</label>
+				<fieldset data-role="controlgroup" id="rdo-type" data-mini="true" data-type="horizontal" style="padding:5px 0px; margin:0px">
+					<input type="radio" name="rdo-type" id="rdo-type-0" value="a" checked="checked" />
+					<label for="rdo-type-0">散文</label>
+					<input type="radio" name="rdo-type" id="rdo-type-1" value="b"  />
+					<label for="rdo-type-1">随笔</label>
+					<input type="hidden" id="hidtype"  value="a"/><!--用于存储radio 的值-->
+				</fieldset>
+				<label for="txt-title">标题:</label>
+				<input type="text" name="txt-title" id="txt-title" value=""  />
+				<label for="txta-content">正文:</label>
+				<textarea name="txta-content" id="txta-content"></textarea>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>©2014 showingcloud.com Co.</h1>
+			</div>
+		</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/storage.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

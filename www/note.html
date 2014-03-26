@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"  content="width=device-width" />
+		<meta http-equiv='Content-Type' content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.2.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>我的记事本</title>
+    </head>
+    <body>
+        <!--管理员界面-->
+		<div data-role="page" id="notePage">
+			<div data-role="header" data-position="fixed" data-position="inline" data-theme="b">
+				<a href="notenav.html" rel="external" >导航</a>
+				<h4>修酝记事</h4>
+				<a href="addnote.html" rel="external" class="ui-btn-right">新增</a>
+			</div>
+			<div data-role="content" style="margin-top:-1px;">
+				<ul data-role="listview">
+				</ul>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>©2014 showingcloud.com Co.</h1>
+			</div>
+		</div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/storage.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+    </body>
+</html>
