@@ -127,8 +127,10 @@ $("#editPage").on("pagebeforeshow", function() {
     txtacontent.val(editData.content);
     if (editData.type == "a") {
         $("#lbl-type-0").removeClass("ui-radio-off").addClass("ui-radio-on ui-btn-active");
+		$("#lbl-type-1").removeClass("ui-radio-on ui-btn-active").addClass("ui-radio-off");
     } else {
         $("#lbl-type-1").removeClass("ui-radio-off").addClass("ui-radio-on ui-btn-active");
+		$("#lbl-type-0").removeClass("ui-radio-on ui-btn-active").addClass("ui-radio-off");
     }
 	//修改的事件
     rdotype.bind("change", function() {
